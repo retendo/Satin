@@ -10,10 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Generate Documentation
-        uses: SwiftDocOrg/swift-doc@master
+        uses: sersoft-gmbh/swifty-docs-action@v3
         with:
-          inputs: "Sources"
-          module-name: Satin
           output: "Documentation"
       - name: Upload Documentation to Wiki
         uses: SwiftDocOrg/github-wiki-publish-action@v1
